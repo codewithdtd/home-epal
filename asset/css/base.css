@@ -5,11 +5,116 @@
    --color-secondary-lighter: #59c8e0;
    --color-secondary-link: #9ce4f2;
    --color-secondary-link-lighter: #E0FAFF;
-   --color-ink-link-teal: #E0FAFF;
-   --color-ink-basic: #E0FAFF;
-   --color-ink-ligh: #E0FAFF;
-   --color-ink-lighter: #E0FAFF;
-   --color-background-lighter: #E0FAFF;
-   --color-background-footer: #E0FAFF;
-   /* --font-main:  */
+   --color-ink-teal: #178EA8;
+   --color-ink-basic: #172B4D;
+   --color-ink-ligh: #6B778C;
+   --color-ink-lighter: #FFFFFF;
+   --color-background-lighter: #F8F8F8;
+   --color-background-footer: #2C3749;
+   --color-subdued-heading: #6B778C;
+   --color-subdued-not-heading: #637381;
+   --color-ink-not-heading: #212B36;
+}
+
+body {
+   font-family: Mulish;
+}
+
+.heading-1 {
+   width: 178px;
+   height: 40px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 40px;
+   color: var(--color-ink-basic);
+}
+
+.heading-2 {
+   width: 138px;
+   height: 32px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 32px;
+   color: var(--color-ink-basic);
+}
+
+.heading-3 {
+   width: 99px;
+   height: 28px;
+   gap: 0px;
+   opacity: 0px;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 28px;
+   color: var(--color-ink-basic);
+}
+
+.title {
+   width: 32px;
+   height: 24px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.subtitile-1 {
+   width: 71px;
+   height: 16px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: 0.1599999964237213px;
+}
+
+.subtitile-2 {
+   width: 62px;
+   height: 20px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+.body {
+   height: 20px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+.caption-1 {
+   height: 16px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 16px;
+}
+
+.caption-2 {
+   height: 16px;
+   gap: 0px;
+   opacity: 0px;
+   font-family: Mulish;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 16px;
 }

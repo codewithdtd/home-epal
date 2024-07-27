@@ -1,0 +1,131 @@
+p {
+    margin: 0;
+}
+
+.header {
+    width: 1366px;
+    height: 48px;
+    top: 45px;
+    gap: 0px;
+    opacity: 0px;
+    background: #59C8E0;
+    border-bottom: 2px solid var(--color-secondary-basic);
+}
+
+.header--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+
+.header__right {
+    display: flex;
+}
+.header__right__info {
+    display: flex;
+}
+.header__right a {
+    /* font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left; */
+    color: var(--color-ink-lighter);
+    padding: 0 8px;
+    text-decoration: none;
+    /* border-right: 1px solid #89E2F5; */
+}
+
+.header__right > a {
+    border-right: 1px solid #89E2F5;
+    text-decoration: none;
+}
+.header__right__info {
+    padding-left: 10px;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__left__svg {
+    padding: 0 10px;
+}
+
+.header__left__svg-1 {
+    border-right: 1px solid #89E2F5;
+}
+
+
+/* title */
+.title {
+    height: 90px;
+    border-bottom: 0.5px solid #D3D7DE;
+    display: flex;
+    align-items: center;
+}
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+.title__left {
+    display: flex;
+}
+.title__left__logo {
+    width: 70.15px;
+    height: 64px;
+    margin-right: 10px;
+}
+
+.title__right {
+    display: flex;
+    align-items: center;
+}
+
+.title__right__search {
+    width: 315px;
+    height: 40px;
+    top: 72px;
+    left: 899px;
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0px;
+    border: 1px solid #D3D7DE;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 20px;
+}
+
+.title__right__search input {
+    flex-grow: 2;
+    /* margin-left: 15px; */
+    outline: none;
+    border: none;
+}
+
+.title__right__cart {
+    position: relative;
+}
+.title__right__cart svg:hover {
+    cursor: pointer;
+    filter: invert(18%) sepia(43%) saturate(379%) hue-rotate(176deg) brightness(96%) contrast(93%);
+}
+.title__right__cart-count {
+    position: absolute;
+    background: red;
+    height: 16px;
+    width: 16px;
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: center;
+    top: 0;
+    right: -5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    color: var(--color-ink-lighter);
+}
+
+/*  */
