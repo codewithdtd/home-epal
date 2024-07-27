@@ -30,7 +30,7 @@
 <body>
     <header class="header container-fluid">
         <div class="container header--container">
-            <div class="header__left">
+            <div class="header__left col-sm-6">
                 <a class="header__left__svg header__left__svg-1" href="#fb">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -46,7 +46,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="header__right">
+            <div class="header__right col-sm-6">
                 <a href="#blog" class="body">Blog</a>
                 <a href="#about" class="body">Giới thiệu</a>
                 <div class="header__right__info">
@@ -61,9 +61,9 @@
         </div>
     </header>
     <div class="container-fluid title">
-        <div class="title-container container">
+        <div class="title-container container col-md-12">
             <!-- <div> -->
-                <a href="#home" class="title__left">
+                <a href="#home" class="title__left col-md-6">
                     <div class="title__left__logo">
                         <img src="./asset/img/logo.svg" alt="">
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </a>
             <!-- </div> -->
-            <div class="title__right">
+            <div class="title__right col-md-6">
                 <div class="title__right__search">
                     <input type="text" placeholder="Tìm kiếm sản phẩm">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,6 +91,37 @@
                     <div class="title__right__cart-count">2</div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav col-sm-10">
+                    <a class="nav-link nav-link--active" aria-current="page" href="#">Trang chủ</a>
+                    <a class="nav-link" href="#">Lan hồ điệp</a>
+                    <a class="nav-link" href="#">Chủ đề theo mùa</a>
+                    <a class="nav-link" href="#">Sinh nhật</a>
+                    <a class="nav-link" href="#">Chúc mừng</a>
+                    <a class="nav-link" href="#">Chia buồn</a>
+                    <a class="nav-link" href="#">
+                        <img src="./asset/icon/ting.svg" alt="">
+                        Khuyến mãi
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main -->
+    <div class="main">
+        <div class="container main__content">
+            <p class="heading-1 heading-1--main">Trao gửi yêu thương</p>
+            <p class="title-epal title--main">Điện hoa quốc tế & toàn quốc. Mộc Flowers giao hoa miễn phí trong vòng 2h.</p>
         </div>
     </div>
 </body>
