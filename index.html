@@ -30,7 +30,7 @@
 <body>
     <header class="header container-fluid">
         <div class="container header--container">
-            <div class="header__left">
+            <div class="header__left col-sm-6">
                 <a class="header__left__svg header__left__svg-1" href="#fb">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -46,7 +46,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="header__right">
+            <div class="header__right col-sm-6">
                 <a href="#blog" class="body">Blog</a>
                 <a href="#about" class="body">Giới thiệu</a>
                 <div class="header__right__info">
@@ -62,36 +62,514 @@
     </header>
     <div class="container-fluid title">
         <div class="title-container container">
-            <!-- <div> -->
-                <a href="#home" class="title__left">
-                    <div class="title__left__logo">
-                        <img src="./asset/img/logo.svg" alt="">
-                    </div>
-                    <div class="title__left__name">
-                        <img class="title__left__name-main" src="./asset/img/logo-top.svg" alt="">
-                        <br><img class="title__left__name-main" src="./asset/img/logo-bottom.svg" alt="">
-                    </div>
-                </a>
-            <!-- </div> -->
-            <div class="title__right">
-                <div class="title__right__search">
-                    <input type="text" placeholder="Tìm kiếm sản phẩm">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L19.75 18.25C20.1642 18.6642 20.1642 19.3358 19.75 19.75C19.3358 20.1642 18.6642 20.1642 18.25 19.75L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
-                            fill="#172B4D" />
-                    </svg>
+            <div class="row col-12">
+                <div class="col-md-6">
+                    <a href="#home" class="title__left">
+                        <div class="title__left__logo">
+                            <img src="./asset/img/logo.svg" alt="">
+                        </div>
+                        <div class="title__left__name">
+                            <img class="title__left__name-main" src="./asset/img/logo-top.svg" alt="">
+                            <br><img class="title__left__name-main" src="./asset/img/logo-bottom.svg" alt="">
+                        </div>
+                    </a>
                 </div>
-                <div class="title__right__cart">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8H9C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8H17C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6H9C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM19 6H17C17 5.34339 16.8707 4.69321 16.6194 4.08658C16.3681 3.47995 15.9998 2.92876 15.5355 2.46447C15.0712 2.00017 14.52 1.63188 13.9134 1.3806C13.3068 1.12933 12.6566 1 12 1C10.6739 1 9.40215 1.52678 8.46447 2.46447C7.52678 3.40215 7 4.67392 7 6H5C3.89 6 3 6.89 3 8V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V8C21 6.89 20.1 6 19 6Z"
-                            fill="#D3D7DE" />
-                    </svg>
-                    <div class="title__right__cart-count">2</div>
+                <div class="title__right col-md-6">
+                    <div class="title__right__search">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L19.75 18.25C20.1642 18.6642 20.1642 19.3358 19.75 19.75C19.3358 20.1642 18.6642 20.1642 18.25 19.75L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
+                                fill="#172B4D" />
+                        </svg>
+                    </div>
+                    <div class="title__right__cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8H9C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8H17C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6H9C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM19 6H17C17 5.34339 16.8707 4.69321 16.6194 4.08658C16.3681 3.47995 15.9998 2.92876 15.5355 2.46447C15.0712 2.00017 14.52 1.63188 13.9134 1.3806C13.3068 1.12933 12.6566 1 12 1C10.6739 1 9.40215 1.52678 8.46447 2.46447C7.52678 3.40215 7 4.67392 7 6H5C3.89 6 3 6.89 3 8V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V8C21 6.89 20.1 6 19 6Z"
+                                fill="#D3D7DE" />
+                        </svg>
+                        <div class="title__right__cart-count">2</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav col-sm-10">
+                    <a class="nav-link nav-link--active" aria-current="page" href="#">Trang chủ</a>
+                    <a class="nav-link" href="#">Lan hồ điệp</a>
+                    <a class="nav-link" href="#">Chủ đề theo mùa</a>
+                    <a class="nav-link" href="#">Sinh nhật</a>
+                    <a class="nav-link" href="#">Chúc mừng</a>
+                    <a class="nav-link" href="#">Chia buồn</a>
+                    <a class="nav-link" href="#">
+                        <img src="./asset/icon/ting.svg" alt="">
+                        Khuyến mãi
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main -->
+    <div class="main">
+        <div class="container main__content">
+            <h1 class="heading-1 heading-1--main">Trao gửi yêu thương</h1>
+            <p class="title-epal title--main">Điện hoa quốc tế & toàn quốc. Mộc Flowers giao hoa miễn phí trong vòng 2h.</p>
+        </div>
+    </div>
+    <!-- products -->
+    <div class="products container">
+        <h1 class="heading-1 heading-1-products m-3">Sản phẩm của chúng tôi</h1>
+        <p class="title-epal title--products m-3">Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa, Mộc Flowers chúng tôi luôn cố gắng để tạo ra những sản phẩm tốt
+        nhất, đa dạng nhất phục vụ cho mọi nhu cầu của khách hàng.</p>
+        <div class="p-3">
+            <div class="row" id="products-list">
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-1.png" alt="">
+                            <div class="products__item-background">
+                                <p>Bó hoa</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-2.png" alt="">
+                            <div class="products__item-background">
+                                <p>Kệ hoa</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-3.png" alt="">
+                            <div class="products__item-background">
+                                <p>Giỏ hoa</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-4.png" alt="">
+                            <div class="products__item-background">
+                                <p>Hoa cưới</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-3">
+            <div class="row products-list">
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-5.png" alt="">
+                            <div class="products__item-background">
+                                <p>Hộp hoa</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-6.png" alt="">
+                            <div class="products__item-background">
+                                <p>Bình hoa</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-7.png" alt="">
+                            <div class="products__item-background">
+                                <p>Lan hồ điệp</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <div class="products__item">
+                            <img src="./asset/img/products-8.png" alt="">
+                            <div class="products__item-background">
+                                <p>Lãng hoa</p>
+                                <button>Xem ngay
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" //
+                                            d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- about -->
+    <div class="about container-fluid">
+        <div class="about-bg">
+            <div class="about-container container">
+                <h1 class="about__title heading-1-products">Lý do bạn nên chọn Mộc Flowers</h1>
+                <div class="about__list row">
+                    <div class="about__list__item col-md-4">
+                        <img src="./asset/icon/certificate-1.svg" alt="">
+                        <h2>Chứng nhận sản phẩm</h2>
+                        <p>Sản phẩm của chúng tôi tự hào được chứng nhận chất. Với các loại hoa hoa dạng được nhập khẩu đảm bảo chất lượng sản
+                        phẩm.</p>
+                    </div>
+                    <div class="about__list__item about__list__item--active col-md-4">
+                        <img src="./asset/icon/premium-badge-1.svg" alt="">
+                        <h2>Uy tín hàng đầu</h2>
+                        <p>Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa, Mộc Flowers hiểu mức độ quan trọng trong công
+                            việc của mình là
+                            truyền tải đúng và đủ thông điệp của người tặng đến người nhận. Vì thế chúng tôi cam kết 100% sự hài
+                            lòng của khách hàng
+                            với dịch vụ điện hoa của chúng tôi.</p>
+                    </div>
+                    <div class="about__list__item col-md-4">
+                        <img src="./asset/icon/reputation.svg" alt="">
+                        <h2>Chất lượng tuyệt vời</h2>
+                        <p>Luôn cam kết đặt chất lượng hoa luôn tươi mới lên hàng đầu giao cho khách. Các mẫu hoa luôn được cắm đủ số lượng và
+                        giống kiểu dáng đã đặt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-list">
+                <div class="about-item about-item-active"><div class="about-item-up"></div></div>
+                <div class="about-item"><div class="about-item-up"></div></div>
+                <div class="about-item"><div class="about-item-up"></div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- testimonials -->
+    <div class="testimonials container">
+        <h1 class="about__title heading-1-products">Khách hàng nói gì về chúng tôi</h1>
+        <div class="testimonials__list row">
+            <div class="col-md-4 testimonials__item">
+                <img src="./asset/img/testimonials-1.png" alt="">
+            </div>
+            <div class="col-md-4 testimonials__item">
+                <img src="./asset/img/testimonials-2.png" alt="">
+            </div>
+            <div class="col-md-4 testimonials__item">
+                <img src="./asset/img/testimonials-3.png" alt="">
+            </div>
+        </div>
+        <div class="testimonials__left">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.9 11.3C5.2866 11.6866 5.9134 11.6866 6.3 11.3C6.6866 10.9134 6.6866 10.2866 6.3 9.9L2.4 6L6.3 2.1C6.6866 1.7134 6.6866 1.0866 6.3 0.7C5.9134 0.3134 5.2866 0.3134 4.9 0.7L0.307108 5.29289C-0.0834169 5.68342 -0.0834169 6.31658 0.307107 6.70711L4.9 11.3Z"
+                    fill="#172B4D" />
+            </svg>
+        </div>
+        <div class="testimonials__right">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                    fill="#172B4D" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- partner -->
+    <div class="partner container">
+        <h1 class="about__title heading-1-products">Đối tác của chúng tôi</h1>
+        <div class="row partner__list">
+            <div class="partner__item col-md-3">
+                <img src="./asset/img/partner-1.png" alt="">
+            </div>
+            <div class="partner__item col-md-3">
+                <img src="./asset/img/partner-2.png" alt="">
+            </div>
+            <div class="partner__item col-md-3">
+                <img src="./asset/img/partner-3.png" alt="">
+            </div>
+            <div class="partner__item col-md-3">
+                <img src="./asset/img/partner-4.png" alt="">
+            </div>
+        </div>
+        <div class="testimonials__left">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.9 11.3C5.2866 11.6866 5.9134 11.6866 6.3 11.3C6.6866 10.9134 6.6866 10.2866 6.3 9.9L2.4 6L6.3 2.1C6.6866 1.7134 6.6866 1.0866 6.3 0.7C5.9134 0.3134 5.2866 0.3134 4.9 0.7L0.307108 5.29289C-0.0834169 5.68342 -0.0834169 6.31658 0.307107 6.70711L4.9 11.3Z"
+                    fill="#172B4D" />
+            </svg>
+        </div>
+        <div class="testimonials__right">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                    fill="#172B4D" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- end -->
+    <div class="end container-fluid">
+        <div class="end__list container">
+            <div class="end__item subtitile-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 4H14.8C14.4 2.8 13.3 2 12 2C10.7 2 9.6 2.8 9.2 4H5C3.9 4 3 4.9 3 6V20C3 21.1 3.9 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM12 4C12.5 4 13 4.5 13 5C13 5.5 12.5 6 12 6C11.5 6 11 5.5 11 5C11 4.5 11.5 4 12 4ZM13 18H8C7.5 18 7 17.5 7 17C7 16.5 7.5 16 8 16H13C13.5 16 14 16.5 14 17C14 17.5 13.5 18 13 18ZM16 14H8C7.5 14 7 13.5 7 13C7 12.5 7.5 12 8 12H16C16.5 12 17 12.5 17 13C17 13.5 16.5 14 16 14ZM16 10H8C7.5 10 7 9.5 7 9C7 8.5 7.5 8 8 8H16C16.5 8 17 8.5 17 9C17 9.5 16.5 10 16 10Z"
+                        fill="white" />
+                </svg>
+                Hướng dẫn đặt hàng, thanh toán
+            </div>
+            <div class="end__item subtitile-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 1.00003C9.48509 0.994005 7.04525 1.85662 5.093 3.44203L4.53908 2.71123C4.3654 2.48208 4 2.60491 4 2.89245V5.73981C4 5.88911 4.10978 6.01568 4.25757 6.0368L6.83577 6.40511C7.09248 6.44178 7.27165 6.15748 7.12781 5.94171L6.5 5C7.83375 3.98626 9.49422 3.1984 11.162 3.04038C12.8298 2.88236 14.5086 3.1935 16.009 3.93871C17.5094 4.68392 18.7717 5.83355 19.6536 7.25793C20.5355 8.6823 21.0018 10.3248 21 12V12.019C20.9975 14.406 20.0469 16.6942 18.3572 18.3802C16.6676 20.0663 14.3774 21.0121 11.9905 21.0095C9.60355 21.007 7.31537 20.0564 5.62932 18.3668C3.94328 16.6772 2.99748 14.387 3 12C3 11.7348 2.89464 11.4805 2.70711 11.2929C2.51957 11.1054 2.26522 11 2 11C1.73478 11 1.48043 11.1054 1.29289 11.2929C1.10536 11.4805 1 11.7348 1 12C1 14.1756 1.64514 16.3024 2.85383 18.1113C4.06253 19.9202 5.78049 21.3301 7.79048 22.1627C9.80047 22.9953 12.0122 23.2131 14.146 22.7887C16.2798 22.3642 18.2398 21.3166 19.7782 19.7782C21.3166 18.2398 22.3642 16.2798 22.7886 14.146C23.2131 12.0122 22.9952 9.8005 22.1627 7.79051C21.3301 5.78053 19.9202 4.06256 18.1113 2.85387C16.3023 1.64517 14.1756 1.00003 12 1.00003Z"
+                        fill="white" />
+                    <path
+                        d="M16.947 16.9525C18.0927 15.808 18.8062 14.3017 18.9659 12.6902C19.1256 11.0787 18.7215 9.46163 17.8227 8.11458C16.9238 6.76753 15.5857 5.77381 14.0363 5.30273C12.4869 4.83164 10.8221 4.91233 9.32556 5.53105C7.829 6.14977 6.59326 7.26824 5.82887 8.6959C5.06449 10.1236 4.81875 11.7721 5.13352 13.3606C5.4483 14.9492 6.30411 16.3794 7.55516 17.4077C8.8062 18.436 10.3751 18.9987 11.9945 19C12.914 19.0007 13.8247 18.8203 14.6744 18.469C15.5242 18.1176 16.2964 17.6023 16.947 16.9525ZM10.1695 15.5C9.72767 15.5 9.3695 15.1418 9.3695 14.7V14.55C9.3695 14.1082 9.72767 13.75 10.1695 13.75H12.8695V12.875H10.2445C10.0124 12.875 9.78988 12.7828 9.62578 12.6187C9.46169 12.4546 9.3695 12.2321 9.3695 12V9.375C9.3695 9.14293 9.46169 8.92037 9.62578 8.75628C9.78988 8.59219 10.0124 8.5 10.2445 8.5H11.1195V8.425C11.1195 7.98317 11.4777 7.625 11.9195 7.625H12.0695C12.5113 7.625 12.8695 7.98317 12.8695 8.425V8.5H13.8195C14.2613 8.5 14.6195 8.85817 14.6195 9.3V9.45C14.6195 9.89183 14.2613 10.25 13.8195 10.25H11.1195V11.125H13.7445C13.9766 11.125 14.1991 11.2172 14.3632 11.3813C14.5273 11.5454 14.6195 11.7679 14.6195 12V14.625C14.6195 14.8571 14.5273 15.0796 14.3632 15.2437C14.1991 15.4078 13.9766 15.5 13.7445 15.5H12.8695V15.575C12.8695 16.0168 12.5113 16.375 12.0695 16.375H11.9195C11.4777 16.375 11.1195 16.0168 11.1195 15.575V15.5H10.1695Z"
+                        fill="white" />
+                </svg>
+                Quy định đổi trả, hoàn tiền
+            </div>
+            <div class="end__item subtitile-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6 7C6 7.55228 6.44772 8 7 8H17C17.5523 8 18 7.55228 18 7C18 6.44772 17.5523 6 17 6H7C6.44771 6 6 6.44772 6 7ZM6 10C6 10.5523 6.44772 11 7 11H17C17.5523 11 18 10.5523 18 10C18 9.44772 17.5523 9 17 9H7C6.44771 9 6 9.44772 6 10ZM6 13C6 13.5523 6.44772 14 7 14H17C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12H7C6.44771 12 6 12.4477 6 13ZM2 4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H20C20.5304 2 21.0391 2.21071 21.4142 2.58579C21.7893 2.96086 22 3.46957 22 4V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H6L2.85355 21.1464C2.53857 21.4614 2 21.2383 2 20.7929V4Z"
+                        fill="white" />
+                </svg>
+                Câu hỏi thường gặp
+            </div>
+            <div class="end__item end__item--last subtitile-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.05875 14.5877H20.823C21.4701 14.5877 21.9995 14.0583 21.9995 13.4112V11.0584C21.9995 10.4114 21.4701 9.88196 20.823 9.88196H9.05875C8.41172 9.88196 7.88232 10.4114 7.88232 11.0584V13.4112C7.88232 14.0583 8.41172 14.5877 9.05875 14.5877Z"
+                        fill="white" />
+                    <path
+                        d="M9.05875 20.4696H20.823C21.4701 20.4696 21.9995 19.9402 21.9995 19.2932V16.9403C21.9995 16.2933 21.4701 15.7639 20.823 15.7639H9.05875C8.41172 15.7639 7.88232 16.2933 7.88232 16.9403V19.2932C7.88232 19.9402 8.41172 20.4696 9.05875 20.4696Z"
+                        fill="white" />
+                    <path
+                        d="M7.88232 5.17643V7.52928C7.88232 8.17632 8.41172 8.70571 9.05875 8.70571H20.823C21.4701 8.70571 21.9995 8.17632 21.9995 7.52928V5.17643C21.9995 4.52939 21.4701 4 20.823 4H9.05875C8.41172 4 7.88232 4.52939 7.88232 5.17643Z"
+                        fill="white" />
+                    <path
+                        d="M3.17692 14.5888H5.52977C6.17681 14.5888 6.7062 14.0594 6.7062 13.4123V11.0595C6.7062 10.4124 6.17681 9.88306 5.52977 9.88306H3.17692C2.52988 9.88306 2.00049 10.4124 2.00049 11.0595V13.4123C2.00049 14.0594 2.52988 14.5888 3.17692 14.5888Z"
+                        fill="white" />
+                    <path
+                        d="M3.17643 8.70571H5.52928C6.17632 8.70571 6.70571 8.17632 6.70571 7.52928V5.17643C6.70571 4.52939 6.17632 4 5.52928 4H3.17643C2.52939 4 2 4.52939 2 5.17643V7.52928C2 8.17632 2.52939 8.70571 3.17643 8.70571Z"
+                        fill="white" />
+                    <path
+                        d="M5.19231 18.1106L6.54108 16.7619C6.64823 16.6509 6.70752 16.5023 6.70618 16.3481C6.70484 16.1939 6.64297 16.0464 6.53391 15.9373C6.42485 15.8282 6.27732 15.7664 6.1231 15.765C5.96887 15.7637 5.82028 15.823 5.70935 15.9301L4.36057 17.2789L3.0118 15.9301C2.90086 15.823 2.75227 15.7637 2.59805 15.765C2.44382 15.7664 2.29629 15.8282 2.18723 15.9373C2.07817 16.0464 2.01631 16.1939 2.01497 16.3481C2.01363 16.5023 2.07292 16.6509 2.18006 16.7619L3.52884 18.1106L2.18006 19.4594C2.12388 19.5137 2.07907 19.5786 2.04824 19.6503C2.01742 19.7221 2.00119 19.7993 2.00051 19.8774C1.99983 19.9555 2.01471 20.033 2.04429 20.1052C2.07387 20.1775 2.11754 20.2432 2.17277 20.2984C2.228 20.3537 2.29368 20.3973 2.36597 20.4269C2.43825 20.4565 2.51571 20.4714 2.59381 20.4707C2.67192 20.47 2.7491 20.4538 2.82087 20.423C2.89263 20.3921 2.95754 20.3473 3.0118 20.2911L4.36057 18.9424L5.70935 20.2911C5.82028 20.3983 5.96887 20.4576 6.1231 20.4562C6.27732 20.4549 6.42485 20.393 6.53391 20.284C6.64297 20.1749 6.70484 20.0274 6.70618 19.8732C6.70752 19.7189 6.64823 19.5704 6.54108 19.4594L5.19231 18.1106Z"
+                        fill="white" />
+                </svg>
+                Dịch vụ khác
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer container-fluid">
+        <div class="footer-container container">
+            <div class="footer__list row">
+                <div class="footer__item col-md-3">
+                    <div class="footer__item__logo">
+                        <div class="footer__logo">
+                            <img src="./asset/img/logo.svg" alt="">
+                        </div>
+                        <div class="footer__name">
+                            <img class="footer__name-main" src="./asset/img/logo-top.svg" alt="">
+                            <img class="footer__name-main footer__name-two" src="./asset/img/logo-bottom.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="subtitile-2">Mộc Flowers luôn cam kết đặt chất lượng hoa luôn tươi mới lên hàng đầu giao cho khách hàng.</p>
+                </div>
+                <div class="footer__item col-md-3">
+                    <p class="info-title">Thông tin shop</p>
+                    <div class="info-item row">
+                        <p class="subtitile-2 col-sm-4">Điện thoại</p>
+                        <p class="subtitile-2 info-item-two col-sm-8">+84 356 435 789</p>
+                    </div>
+                    <div class="info-item row">
+                        <p class="subtitile-2 col-sm-4">Email</p>
+                        <p class="subtitile-2 info-item-two col-sm-8">mocflowers@gmail.com</p>
+                    </div>
+                    <div class="info-item row">
+                        <p class="subtitile-2 col-sm-4">Website</p>
+                        <p class="subtitile-2 info-item-two col-sm-8">mocflowers.com</p>
+                    </div>
+                    <div class="info-item row">
+                        <p class="subtitile-2 col-sm-4">Giờ mở cửa</p>
+                        <p class="subtitile-2 info-item-two col-sm-8">7:00AM - 8:00PM</p>
+                    </div>
+                </div>
+                <div class="footer__item col-md-3">
+                    <p class="info-title">Sản phẩm</p>
+                    <div class="info-item row">
+                        <p class="subtitile-2">Lan hồ điệp</p>
+                    </div>
+                    <div class="info-item row">
+                        <p class="subtitile-2">Hoa chủ đề theo các mùa</p>
+                    </div>
+                    <div class="info-item row">
+                        <p class="subtitile-2">Hoa sinh nhật</p>
+                    </div>
+                    <div class="info-item row">
+                        <p class="subtitile-2">Hoa chúc mừng</p>
+                    </div>
+                </div>
+                <div class="footer__item col-md-3">
+                    <p class="info-title">Theo dõi chúng tôi</p>
+                    <div class="info-social">
+                        <div class="info-social-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 2V6H15C14.31 6 14 6.81 14 7.5V10H17V14H14V22H10V14H7V10H10V6C10 4.93913 10.4214 3.92172 11.1716 3.17157C11.9217 2.42143 12.9391 2 14 2H17Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="info-social-item info-social-item-ig">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="info-social-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23 11H21V9H19V11H17V13H19V15H21V13H23V11ZM8 11V13.4H12C11.8 14.4 10.8 16.4 8 16.4C5.6 16.4 3.7 14.4 3.7 12C3.7 9.6 5.6 7.6 8 7.6C9.4 7.6 10.3 8.2 10.8 8.7L12.7 6.9C11.5 5.7 9.9 5 8 5C4.1 5 1 8.1 1 12C1 15.9 4.1 19 8 19C12 19 14.7 16.2 14.7 12.2C14.7 11.7 14.7 11.4 14.6 11H8Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <img src="./asset/img/footer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="copyright container-fluid">
+        <div class="copyright-container container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Copyright &copy2021, mocflowers.com, All rights reserved
+                </div>
+                <div class="col-sm-6 text-end">
+                    Thiết kế Website bởi Epal Solution
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        async function loadJSON() {
+            const response = await fetch('./asset/data.json');
+            const data = await response.json();
+            const productsList = document.getElementById('products-list');
+
+            productsList.innerHTML = '';
+
+            data.forEach(item => {
+                const col = document.createElement('div');
+                col.className = 'col-md-3';
+
+                const paddingWrapper = document.createElement('div');
+                paddingWrapper.className = 'p-2';
+
+                const productItem = document.createElement('div');
+                productItem.className = 'products__item';
+                productItem.style.background = `url(${item.image})`    
+                productItem.innerHTML = `
+                    <div class="products__item-background">
+                        <p>${item.name}<p>
+                        <button>Xem ngay
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.1 0.7C1.7134 0.313401 1.0866 0.313401 0.7 0.7C0.313401 1.0866 0.313401 1.7134 0.7 2.1L4.6 6L0.7 9.9C0.3134 10.2866 0.313401 10.9134 0.7 11.3C1.0866 11.6866 1.7134 11.6866 2.1 11.3L6.69289 6.70711C7.08342 6.31658 7.08342 5.68342 6.69289 5.29289L2.1 0.7Z"
+                                fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    `;
+                paddingWrapper.appendChild(productItem);
+                col.appendChild(paddingWrapper);
+                productsList.appendChild(col);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadJSON);
+    </script> -->
+    
 </body>
 </html>
