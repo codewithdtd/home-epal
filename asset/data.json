@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Bó hoa",
+        "image": "./asset/img/products-1.png"
+    },
+    {
+        "name": "Kệ hoa",
+        "image": "./asset/img/products-2.png"
+
+    },
+    {
+        "name": "Giỏ hoa",
+        "image": "./asset/img/products-3.png"
+    },
+    {
+        "name": "Hoa cưới",
+        "image": "./asset/img/products-4.png"
+    },
+    {
+        "name": "Hoa cưới",
+        "image": "./asset/img/products-5.png"
+    },
+    {
+        "name": "Hoa cưới",
+        "image": "./asset/img/products-6.png"
+    },
+    {
+        "name": "Hoa cưới",
+        "image": "./asset/img/products-7.png"
+    },
+    {
+        "name": "Hoa cưới",
+        "image": "./asset/img/products-8.png"
+    }
+]
